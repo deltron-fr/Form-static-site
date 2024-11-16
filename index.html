@@ -33,7 +33,7 @@
             
             try {
                 // Send data to Logic App endpoint
-                const response = await fetch("YOUR_LOGIC_APP_URL_HERE", {
+                const response = await fetch("https://prod-28.northcentralus.logic.azure.com:443/workflows/9930255c24554697a33a44680ab3019a/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=dVUyXdXx1NczesfKwd6J_pe8jUMXJNWp8Rtc7Su9YQs", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
